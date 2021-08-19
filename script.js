@@ -31,7 +31,7 @@ const allOperator = document.getElementsByClassName("operator");
 for (let i = 0; i < allOperator.length; i++) {
     allOperator[i].addEventListener("click", function () {
         if (this.id == "clear") {
-            printScreen(" ");
+            printScreen("");
         } else if (this.id == "backspace") {
             let takeValue = getInputScreen();
             takeValue = takeValue.substr(0, takeValue.length - 1);
